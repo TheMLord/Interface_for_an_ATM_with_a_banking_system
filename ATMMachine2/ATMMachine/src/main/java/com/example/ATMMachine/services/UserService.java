@@ -9,4 +9,8 @@ public interface UserService {
 
     void restoreAccount(String login);
 
+    UserAtm getUserById(Long id);
+
+    void saveUser(String login, String password);
+
 }
