@@ -4,27 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6887021-818c-4300-a1a6-d035949a3bed" name="Changes" comment="Прибрал репозиторий 2">
+    <list default="true" id="c6887021-818c-4300-a1a6-d035949a3bed" name="Changes" comment="Удалил локальные карточки">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/bank/controllers/HomepageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/bank/models/CardDeteils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bank/controllers/CardController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bank/models/AbstractCardDetails.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bank/models/CardDetails.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bank/models/DmitriyFirstCard.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bank/models/DmitriySecondCard.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bank/models/MichelCard.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bank/models/StepanCard.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bank/models/UserCastomCard.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bank/repositories/CardRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bank/services/AbstractCardService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bank/services/CardService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bank/services/DmitiryCardService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bank/services/OtherCardService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bank/services/UserCardService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bank/controllers/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bank/controllers/RegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bank/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bank/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bank/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bank/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/bank/controllers/CardController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/bank/models/AbstractCardDetails.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/bank/models/CardDetails.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/bank/models/DmitriyFirstCard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/bank/models/DmitriySecondCard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/bank/models/MichelCard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/bank/models/StepanCard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/bank/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/bank/models/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/bank/models/UserCastomCard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/bank/repositories/CardRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/bank/services/AbstractCardService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/bank/services/CardService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/bank/services/DmitiryCardService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/bank/services/OtherCardService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/bank/services/UserCardService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/bank/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/bank/services/UserService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -44,8 +59,8 @@
     </option>
     <option name="myId2Visible">
       <map>
-        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
-        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
         <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
@@ -65,13 +80,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "spring.configuration.checksum": "08514d8ae103997066570bb2b239fb55"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="BankApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="Interface_for_an_ATM_with_a_banking_system" />
@@ -90,7 +110,8 @@
       <option name="presentableId" value="Default" />
       <updated>1669221160429</updated>
       <workItem from="1669221162295" duration="25000" />
-      <workItem from="1669224472766" duration="951000" />
+      <workItem from="1669224472766" duration="3722000" />
+      <workItem from="1669228410943" duration="3748000" />
     </task>
     <task id="LOCAL-00001" summary="Прибрал репозиторий">
       <created>1669224606889</created>
@@ -106,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669224753579</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Удалил локальные карточки">
+      <created>1669225449121</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1669225449121</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +154,17 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Прибрал репозиторий" />
     <MESSAGE value="Прибрал репозиторий 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Прибрал репозиторий 2" />
+    <MESSAGE value="Удалил локальные карточки" />
+    <option name="LAST_COMMIT_MESSAGE" value="Удалил локальные карточки" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

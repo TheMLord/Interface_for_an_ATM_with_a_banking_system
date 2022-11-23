@@ -1,5 +1,7 @@
 package com.example.bank.models;
 
+import org.springframework.context.annotation.Bean;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -31,6 +33,8 @@ public class User
     private String firstName;
     private String lastName;
     private boolean active;
+
+    private Long balance;
     @ElementCollection(targetClass = Role.class, fetch = FetchType.EAGER)
     @CollectionTable(name = "user_role", joinColumns = @JoinColumn(name = "user_id"))
     @Enumerated(EnumType.STRING)
@@ -55,6 +59,14 @@ public class User
     public Long getId()
     {
         return id;
+    }
+
+    public Long getBalance() {
+        return balance;
+    }
+
+    public void setBalance(Long balance) {
+        this.balance = balance;
     }
 
     public String getLastName()

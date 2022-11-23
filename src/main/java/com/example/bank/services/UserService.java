@@ -1,5 +1,6 @@
 package com.example.bank.services;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Set;
@@ -40,6 +41,24 @@ public class UserService implements UserDetailsService
         return new org.springframework.security.core.userdetails.User(myUser.getCardnumber(), myUser.getCvv(),
                 mapRolesToAthorities(myUser.getRoles()));
     }
+
+    public ArrayList<Object> loadDataByCardnumber(String cardnumber) throws UsernameNotFoundException
+    {
+        ArrayList<Object> data = new ArrayList<Object>();
+
+        User myUser = userRepository.findByCardnumber(cardnumber);
+
+        data.add(myUser.getId());
+        data.add(myUser.getCardnumber());
+        data.add(myUser.getCvv());
+        data.add(myUser.getFirstName());
+        data.add(myUser.getLastName());
+        data.add(myUser.getLastName());
+        data.add(myUser.getBalance());
+
+        return data;
+    }
+
 
     private List<? extends GrantedAuthority> mapRolesToAthorities(Set<Role> roles)
     {
