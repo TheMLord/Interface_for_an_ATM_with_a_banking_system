@@ -34,11 +34,10 @@ public class UserService implements UserDetailsService
         this.userRepository = userRepository;
     }
 
-    @Override
-    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException
+    public UserDetails loadUserByCardnumber(String cardnumber) throws UsernameNotFoundException
     {
-        User myUser = userRepository.findByUsername(username);
-        return new org.springframework.security.core.userdetails.User(myUser.getUsername(), myUser.getPassword(),
+        User myUser = userRepository.findByCardnumber(cardnumber);
+        return new org.springframework.security.core.userdetails.User(myUser.getCardnumber(), myUser.getCvv(),
                 mapRolesToAthorities(myUser.getRoles()));
     }
 
@@ -49,7 +48,7 @@ public class UserService implements UserDetailsService
 
     public void addUser(User user) throws Exception
     {
-        User userFromDb = userRepository.findByUsername(user.getUsername());
+        User userFromDb = userRepository.findByCardnumber(user.getCardnumber());
         if (userFromDb != null)
         {
             throw new Exception("user exist");
@@ -59,4 +58,8 @@ public class UserService implements UserDetailsService
         userRepository.save(user);
     }
 
+    @Override
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        return loadUserByCardnumber(username);
+    }
 }

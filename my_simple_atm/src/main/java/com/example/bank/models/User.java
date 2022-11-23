@@ -26,8 +26,8 @@ public class User
     @Id
     @GeneratedValue
     private Long id;
-    private String username;
-    private String password;
+    private String cardnumber;
+    private String cvv;
     private String firstName;
     private String lastName;
     private boolean active;
@@ -40,10 +40,10 @@ public class User
     {
     }
 
-    public User(String name, String password, Role role)
+    public User(String cardnumber, String cvv, Role role)
     {
-        this.username = name;
-        this.password = password;
+        this.cardnumber = cardnumber;
+        this.cvv = cvv;
         roles.add(role);
     }
 
@@ -62,9 +62,9 @@ public class User
         return lastName;
     }
 
-    public String getPassword()
+    public String getCvv()
     {
-        return password;
+        return cvv;
     }
 
     public Set<Role> getRoles()
@@ -72,9 +72,9 @@ public class User
         return roles;
     }
 
-    public String getUsername()
+    public String getCardnumber()
     {
-        return username;
+        return cardnumber;
     }
 
     public boolean isActive()
@@ -102,9 +102,9 @@ public class User
         this.lastName = lastName;
     }
 
-    public void setPassword(String password)
+    public void setCvv(String password)
     {
-        this.password = password;
+        this.cvv = password;
     }
 
     public void setRoles(Set<Role> roles)
@@ -112,8 +112,8 @@ public class User
         this.roles = roles;
     }
 
-    public void setUsername(String username)
+    public void setCardnumber(String cardnumber)
     {
-        this.username = username;
+        this.cardnumber = cardnumber;
     }
 }
