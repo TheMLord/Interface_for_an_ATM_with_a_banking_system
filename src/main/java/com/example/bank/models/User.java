@@ -29,6 +29,7 @@ public class User
     @GeneratedValue
     private Long id;
     private String cardnumber;
+    private String PIN;
     private String cvv;
     private String firstName;
     private String lastName;
@@ -44,10 +45,10 @@ public class User
     {
     }
 
-    public User(String cardnumber, String cvv, Role role)
+    public User(String cardnumber, String pin, Role role)
     {
         this.cardnumber = cardnumber;
-        this.cvv = cvv;
+        this.PIN = pin;
         roles.add(role);
     }
 
@@ -117,6 +118,14 @@ public class User
     public void setCvv(String password)
     {
         this.cvv = password;
+    }
+    public void setPIN(String password)
+    {
+        this.PIN = password;
+    }
+    public String getPIN()
+    {
+        return PIN;
     }
 
     public void setRoles(Set<Role> roles)

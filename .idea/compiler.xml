@@ -6,17 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Interface_for_an_ATM_with_a_banking_system" />
         <module name="magicians" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Interface_for_an_ATM_with_a_banking_system" target="11" />
+      <module name="magicians" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="Interface_for_an_ATM_with_a_banking_system" options="-parameters" />
       <module name="magicians" options="-parameters" />
     </option>
   </component>

@@ -21,6 +21,7 @@ public class CardDeteils {
 
         this.data.add(myUser.getId());
         this.data.add(myUser.getCardnumber());
+        this.data.add(myUser.getPIN());
         this.data.add(myUser.getCvv());
         this.data.add(myUser.getFirstName());
         this.data.add(myUser.getLastName());

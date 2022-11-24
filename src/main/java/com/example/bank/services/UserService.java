@@ -38,7 +38,7 @@ public class UserService implements UserDetailsService
     public UserDetails loadUserByCardnumber(String cardnumber) throws UsernameNotFoundException
     {
         User myUser = userRepository.findByCardnumber(cardnumber);
-        return new org.springframework.security.core.userdetails.User(myUser.getCardnumber(), myUser.getCvv(),
+        return new org.springframework.security.core.userdetails.User(myUser.getCardnumber(), myUser.getPIN(),
                 mapRolesToAthorities(myUser.getRoles()));
     }
 
@@ -52,7 +52,6 @@ public class UserService implements UserDetailsService
         data.add(myUser.getCardnumber());
         data.add(myUser.getCvv());
         data.add(myUser.getFirstName());
-        data.add(myUser.getLastName());
         data.add(myUser.getLastName());
         data.add(myUser.getBalance());
 
