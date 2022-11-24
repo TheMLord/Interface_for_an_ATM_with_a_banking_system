@@ -4,21 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7de5b5ae-d743-44a7-b74d-9b24b56e212b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="7de5b5ae-d743-44a7-b74d-9b24b56e212b" name="Changes" comment="измедил авторизацию, теперь не по cvv а по PIN">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/bank/controllers/AddMoneyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/bank/models/Money.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/add.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bank/models/CardDeteils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bank/models/CardDeteils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bank/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bank/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bank/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bank/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/registration.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -40,7 +43,7 @@
       <map>
         <entry key="com.haulmont.jpb.jpaInspector" value="false" />
         <entry key="com.haulmont.jpb.jpaPalette" value="false" />
-        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
   </component>
@@ -61,6 +64,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -68,7 +72,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/shiln/IdeaProjects/Interface_for_an_ATM_with_a_banking_system"
+    "last_opened_file_path": "C:/Users/shiln/IdeaProjects/Interface_for_an_ATM_with_a_banking_system",
+    "spring.configuration.checksum": "5f06503f549e860637bf9794c247a512"
   }
 }]]></component>
   <component name="RunManager">
@@ -101,8 +106,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669274167753</updated>
-      <workItem from="1669274169354" duration="1258000" />
+      <workItem from="1669274169354" duration="2149000" />
+      <workItem from="1669294270174" duration="1051000" />
     </task>
+    <task id="LOCAL-00001" summary="измедил авторизацию, теперь не по cvv а по PIN">
+      <created>1669277323455</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669277323455</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,5 +132,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="измедил авторизацию, теперь не по cvv а по PIN" />
+    <option name="LAST_COMMIT_MESSAGE" value="измедил авторизацию, теперь не по cvv а по PIN" />
   </component>
 </project>

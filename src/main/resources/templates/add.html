@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+  <title>Add money</title>
+</head>
+<body>
+<div th:if="${message}">
+  <div th:text="${message}"></div>
+</div>
+<form th:action="@{/add}" method="post">
+  <div><label> add : <input type="text" name="add"/> </label></div>
+  <div><input type="submit" value="Внести деньги"/></div>
+</form>
+</body>
+</html>
