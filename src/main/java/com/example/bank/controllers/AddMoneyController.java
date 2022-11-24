@@ -5,6 +5,7 @@ import javax.inject.Inject;
 import com.example.bank.models.CardDeteils;
 import com.example.bank.models.Money;
 import com.example.bank.repositories.UserRepository;
+import com.example.bank.services.AddService;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -24,12 +25,11 @@ import com.example.bank.services.UserService;
 @Controller
 public class AddMoneyController {
 
-    private final UserRepository userRepository;
-
+    private final UserService userService;
     @Inject
-    public AddMoneyController(UserRepository userRepository)
+    public AddMoneyController(UserService userService)
     {
-        this.userRepository = userRepository;
+        this.userService = userService;
     }
 
     @GetMapping("/add")
@@ -40,11 +40,7 @@ public class AddMoneyController {
 
     @PostMapping("/add")
     public Object addMoney(Money money, Model model) {
-//        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-//        CardDeteils obj = new CardDeteils(userRepository, auth);
-        return model.getAttribute("add");
-
+        model.addAttribute("message", money.getAdd());
+        return "add";
     }
-
-
 }
