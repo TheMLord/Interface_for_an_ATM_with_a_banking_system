@@ -78,7 +78,9 @@ public class UserService implements UserDetailsService
         user.setActive(true);
         userRepository.save(user);
     }
-
+    public void changeCashUser(User user, Long cash){
+        user.setBalance(cash);
+    }
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         return loadUserByCardnumber(username);
@@ -89,5 +91,15 @@ public class UserService implements UserDetailsService
         User myUser = userRepository.findByCardnumber(auth.getName());
         Long sum = money.add + myUser.getBalance();
         myUser.setBalance(sum);
+        changeCashUser(myUser, sum);
+        userRepository.save(myUser);
+    }
+    public void subMoney(Money money){
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        User myUser = userRepository.findByCardnumber(auth.getName());
+        Long sub =myUser.getBalance() - money.sub;
+        myUser.setBalance(sub);
+        changeCashUser(myUser, sub);
+        userRepository.save(myUser);
     }
 }

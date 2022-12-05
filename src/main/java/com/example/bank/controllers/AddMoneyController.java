@@ -41,6 +41,7 @@ public class AddMoneyController {
     @PostMapping("/add")
     public Object addMoney(Money money, Model model) {
         model.addAttribute("message", money.getAdd());
+        userService.addMoney(money);
         return "add";
     }
 }
