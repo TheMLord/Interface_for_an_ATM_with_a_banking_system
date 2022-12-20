@@ -11,5 +11,5 @@ import com.example.bank.models.User;
  */
 public interface UserRepository extends CrudRepository<User, Long>
 {
-    User findByCardnumber(String cardnumder);
+    User findByCardNumber(String cardNumder);
 }

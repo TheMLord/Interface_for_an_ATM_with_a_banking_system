@@ -1,52 +1,41 @@
 package com.example.bank.controllers;
 
-import javax.inject.Inject;
-
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-
 import com.example.bank.models.User;
 import com.example.bank.services.UserService;
 
+import javax.inject.Inject;
+
 /**
- *
- * @author npyatak
- * @since 17.10.2022
+ * Класс-контроллер регистрации
+ * Принимает номер карты и PIN-код и создает нового пользователя
  */
 @Controller
-public class RegistrationController
-{
-
+public class RegistrationController {
     private final UserService userService;
 
     @Inject
-    public RegistrationController(UserService userService)
-    {
+    public RegistrationController(UserService userService) {
         this.userService = userService;
     }
 
     @GetMapping("/registration")
-    public String registration()
-    {
+    public String registration() {
         return "registration";
     }
 
     @PostMapping("/registration")
-    public String adduser(User user, Model model)
-    {
-        try
-        {
+    public String addNewUser(User user, Model model) {
+        try {
+            user.setBalance(0L);
             userService.addUser(user);
             return "redirect:/login";
-        }
-        catch (Exception ex)
-        {
+        } catch (Exception ex) {
             model.addAttribute("message", "User exists");
             return "registration";
         }
     }
-
-
 }

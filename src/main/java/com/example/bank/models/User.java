@@ -1,7 +1,5 @@
 package com.example.bank.models;
 
-import org.springframework.context.annotation.Bean;
-
 import java.util.HashSet;
 import java.util.Set;
 
@@ -28,7 +26,7 @@ public class User
     @Id
     @GeneratedValue
     private Long id;
-    private String cardnumber;
+    private String cardNumber;
     private String PIN;
     private String cvv;
     private String firstName;
@@ -45,10 +43,11 @@ public class User
     {
     }
 
-    public User(String cardnumber, String pin, Role role)
+    public User(String cardNumber, String pin, Role role)
     {
-        this.cardnumber = cardnumber;
+        this.cardNumber = cardNumber;
         this.PIN = pin;
+        this.balance = 0L;
         roles.add(role);
     }
 
@@ -85,9 +84,9 @@ public class User
         return roles;
     }
 
-    public String getCardnumber()
+    public String getCardNumber()
     {
-        return cardnumber;
+        return cardNumber;
     }
 
     public boolean isActive()
@@ -115,7 +114,7 @@ public class User
         this.lastName = lastName;
     }
 
-    public void setCvv(String password)
+    public void setCVV(String password)
     {
         this.cvv = password;
     }
@@ -133,8 +132,8 @@ public class User
         this.roles = roles;
     }
 
-    public void setCardnumber(String cardnumber)
+    public void setCardNumber(String cardNumber)
     {
-        this.cardnumber = cardnumber;
+        this.cardNumber = cardNumber;
     }
 }

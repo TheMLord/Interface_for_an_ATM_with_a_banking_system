@@ -1,11 +1,8 @@
 package com.example.bank.models;
 
 /**
- *
- * @author npyatak
- * @since 17.10.2022
+ * Класс enum(перечисления) для хранения ролей
  */
-public enum Role
-{
-    CLIENT,ADMIN;
+public enum Role {
+    CLIENT, ADMIN;
 }

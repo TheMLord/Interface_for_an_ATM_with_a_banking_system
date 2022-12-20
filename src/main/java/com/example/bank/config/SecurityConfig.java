@@ -9,18 +9,13 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 
 /**
- * @author npyatak
- * @since 17.10.2022
+ * Класс-конфиг для spring security
  */
-
-
 @Configuration
 @EnableWebSecurity
-public class SecurityConfig
-{
+public class SecurityConfig {
     @Bean
-    public PasswordEncoder getPasswordEncoder()
-    {
+    public PasswordEncoder getPasswordEncoder() {
         return NoOpPasswordEncoder.getInstance();
     }
 
