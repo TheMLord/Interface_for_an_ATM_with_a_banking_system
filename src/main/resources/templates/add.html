@@ -12,5 +12,8 @@
   <div><label> add : <input type="text" name="add"/> </label></div>
   <div><input type="submit" value="Внести деньги"/></div>
 </form>
+<form th:action="@{/goHomePageFromAdd}" method="post">
+  <div><input type="submit" value="Вернуться на главную страницу"/></div>
+</form>
 </body>
 </html>

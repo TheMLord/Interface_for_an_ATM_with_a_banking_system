@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+  <title>Home</title>
+</head>
+<body>
+<div th:if="${message}">
+  <div th:text="${message}"></div>
+  <div th:text="${messageCardNumber}"></div>
+  <div th:text="${messagePIN}"></div>
+  <div th:text="${messageCVV}"></div>
+  <div th:text="${messageFirstName}"></div>
+  <div th:text="${messageLastName}"></div>
+  <div th:text="${messageBalance}"></div>
+
+</div>
+<form th:action="@{/goAdd}" method="post">
+  <div><input type="submit" value="Внести деньги на счёт"/></div>
+</form>
+<form th:action="@{/goSub}" method="post">
+  <div><input type="submit" value="Снять деньги со счёта"/></div>
+</form>
+<form th:action="@{/goAddAnother}" method="post">
+  <div><input type="submit" value="Перевести деньги на счёт другому пользователю"/></div>
+</form>
+</body>
+</html>

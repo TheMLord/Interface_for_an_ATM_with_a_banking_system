@@ -12,5 +12,8 @@
     <div><label> sub : <input type="text" name="sub"/> </label></div>
     <div><input type="submit" value="Снять деньги"/></div>
 </form>
+<form th:action="@{/goHomePageFromSub}" method="post">
+    <div><input type="submit" value="Вернуться на главную страницу"/></div>
+</form>
 </body>
 </html>

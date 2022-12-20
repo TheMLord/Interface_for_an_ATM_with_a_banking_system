@@ -39,8 +39,7 @@ public class User
     @Enumerated(EnumType.STRING)
     private Set<Role> roles = new HashSet<>();
 
-    public User()
-    {
+    public User() {
     }
 
     public User(String cardNumber, String pin, Role role)

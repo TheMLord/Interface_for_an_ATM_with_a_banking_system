@@ -33,4 +33,9 @@ public class AddMoneyController {
         userService.addMoney(money);
         return "add";
     }
+
+    @PostMapping("/goHomePageFromAdd")
+    public Object goHomePageFromAdd() {
+        return "redirect:";
+    }
 }

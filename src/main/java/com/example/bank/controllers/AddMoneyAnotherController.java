@@ -42,7 +42,7 @@ public class AddMoneyAnotherController {
 
     @PostMapping("/addAnotherCash")
     public Object addMoneyAnotherCash(Money money, Model model) {
-        switch (userService.addMoneyAnotherUser(transaction.cardNumber, money)){
+        switch (userService.addMoneyAnotherUser(transaction.cardNumber, money)) {
             case "1":
                 model.addAttribute("message", "Отправлено: " + money.getAdd().toString());
                 model.addAttribute("message2", "Пользователю: " + transaction.cardNumber);
@@ -55,5 +55,10 @@ public class AddMoneyAnotherController {
                 break;
         }
         return "addAnotherCash";
+    }
+
+    @PostMapping("/goHomePageFromAddAnother")
+    public Object goHomePageFromAddAnother() {
+        return "redirect:";
     }
 }

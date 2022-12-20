@@ -5,10 +5,13 @@ import com.example.bank.repositories.UserRepository;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.inject.Inject;
+import java.util.ArrayList;
 
 /**
  * Класс-контроллер домашней страници пользователя
@@ -24,17 +27,46 @@ public class HomepageController {
         this.userRepository = userRepository;
     }
 
-    @GetMapping(value = "/home")
-    @ResponseBody
-    public Object getCurrentCardnumber() {
-
-        return getCurrentCardbumberData();
+    @GetMapping("")
+    public String homePage(Model model) {
+        model.addAttribute("message", "ID пользователя: " +
+                getCurrentCardbNumberData().toArray()[0].toString());
+        model.addAttribute("messageCardNumber", "Номер карты пользователя: " +
+                getCurrentCardbNumberData().toArray()[1].toString());
+        model.addAttribute("messagePIN", "ПИН-код пользователя: "
+                + getCurrentCardbNumberData().toArray()[2].toString());
+        model.addAttribute("messageCVV", "CVV пользователя: "
+                + " ");
+        model.addAttribute("messageFirstName", "Имя пользователя: "
+                + " ");
+        model.addAttribute("messageLastName", "Фамилия пользователя: "
+                + " ");
+        model.addAttribute("messageBalance", "Баланс: "
+                + getCurrentCardbNumberData().toArray()[6].toString());
+        return "home";
     }
 
-    public Object getCurrentCardbumberData() {
+    public ArrayList<Object> getCurrentCardbNumberData() {
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         CardDetails obj = new CardDetails(userRepository, auth);
         return obj.GetData();
     }
+
+    @PostMapping("/goAdd")
+    public Object goAdd() {
+        return "redirect:/add";
+    }
+
+    @PostMapping("/goSub")
+    public Object goSub() {
+        return "redirect:/sub";
+    }
+
+    @PostMapping("/goAddAnother")
+    public Object goAddAnother() {
+        return "redirect:/addAnotherUser";
+    }
+
+
 
 }

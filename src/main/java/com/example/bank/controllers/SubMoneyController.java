@@ -35,4 +35,9 @@ public class SubMoneyController {
         }
         return "sub";
     }
+
+    @PostMapping("/goHomePageFromSub")
+    public Object goHomePageFromSub() {
+        return "redirect:";
+    }
 }
