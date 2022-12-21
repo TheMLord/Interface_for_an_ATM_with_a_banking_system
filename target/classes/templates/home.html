@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<style>
+ html {
+     height: 100%;
+ }
+ * {box-sizing: border-box;}
+
+.wrap {
+  max-width: 660px;
+  margin: 50px auto 0 auto;
+  text-align: center;
+}
+.box {
+  display: inline-block;
+  margin: 0 20px;
+  width: 250px;
+  background: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+.blue {
+  background: #93C5C2;
+}
+h1 {
+    margin: 20px 0;
+    font-size: 1.3em;
+    color: #333333;
+}
+h2 {
+    font-size: 0.8em;
+    color: #666666;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+.price {
+    height: 110px;
+    width: 110px;
+    text-align: center;
+    background-color: #EC351D;
+    border-radius: 50%;
+    line-height: 110px;
+    color: #FFF;
+    font-size: 1.4em;
+    font-weight: 100;
+    margin: 20px auto;
+}
+.blue .price {
+  background: white;
+  color: #333333;
+}
+.blue h1, .blue h2, .blue p {
+  color: white;
+}
+.about {
+  margin: 10px 0px;
+  padding-bottom: 10px;
+  font-weight: 100;
+  font-size: 0.8em;
+  color: #888888;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.button {
+    text-decoration: none;
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background: #EC351D;
+    border-radius: 5px;
+    color: white;
+    font-size: 0.75em;
+    font-weight: 100;
+    transition: 0.7s ease-in-out;
+}
+.button:hover {
+  background: #A52514
+}
+ body {
+     height: 100%;
+     background: linear-gradient(to bottom, #33cccc 0%, #66ff99 100%) no-repeat;
+     -moz-background-size: 100%;
+     -webkit-background-size: 100%;
+     -o-background-size: 100%;
+     background-size: 100%;
+     font-family: Verdana, Arial, Helvetica, sans-serif;
+     color: #336;
+}
+.custom-btn {
+  width: 200px;
+  height: 200px;
+  color: #333333;
+  border-radius: 5px;
+  padding: 10px 25px;
+  margin: 20px 0;
+  font-size: 1.3em;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  left: 40%; top: -420px;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+.btn-4 {
+  background-color: #66ff4f;
+  background-image: linear-gradient(315deg, #00ff00 0%, #66ff99 74%);
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+.btn-4:hover{
+  background-color: #89d8d3;
+background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
+}
+.btn-4 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-4:before,
+.btn-4:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+   box-shadow:  4px 4px 6px 0 rgba(255,255,255,.9),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2),
+    inset -4px -4px 6px 0 rgba(255,255,255,.9),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+  transition: all 0.3s ease;
+}
+.btn-4:before {
+  height: 0%;
+  width: .1px;
+}
+.btn-4:after {
+  width: 0%;
+  height: .1px;
+}
+.btn-4:hover:before {
+  height: 100%;
+}
+.btn-4:hover:after {
+  width: 100%;
+}
+.btn-4 span:before,
+.btn-4 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.9),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2),
+    inset -4px -4px 6px 0 rgba(255,255,255,.9),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+  transition: all 0.3s ease;
+}
+.btn-4 span:before {
+  width: .1px;
+  height: 0%;
+}
+.btn-4 span:after {
+  width: 0%;
+  height: .1px;
+}
+.btn-4 span:hover:before {
+  height: 100%;
+}
+.btn-4 span:hover:after {
+  width: 100%;
+}
+
+</style>
+
+<head>
+    <meta charset="utf-8">
+    <title>Home</title>
+</head>
+
+<body>
+<div>
+    <div2 class="wrap">
+        <div3 class="box">
+            <h1>Профиль пользователя</h1>
+            <p class="about">
+            <div th:text="${message}"></div>
+            </p>
+            <p class="about">
+            <div th:text="${messageCardNumber}"></div>
+            </p>
+            <p class="about">
+            <div th:text="${messageFirstName}"></div>
+            </p>
+            <p class="about">
+            <div th:text="${messageBalance}"></div>
+            </p>
+        </div3>
+    </div2>
+    <form th:action="@{/goAdd}" method="post">
+        <div><input class="custom-btn btn-4" type="submit" value="Внести деньги"/></div>
+    </form>
+    <form th:action="@{/goSub}" method="post">
+        <div><input class="custom-btn btn-4" type="submit" value="Снять деньги"/></div>
+    </form>
+    <form th:action="@{/goAddAnother}" method="post">
+        <div><input class="custom-btn btn-4" type="submit" value="Перевести деньги"/></div>
+    </form>
+</div>
+</body>
+
+</html>
