@@ -4,28 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="785822a7-9290-4a03-9896-2f3b7eb77752" name="Changes" comment="operation+correction">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
+    <list default="true" id="785822a7-9290-4a03-9896-2f3b7eb77752" name="Changes" comment="operation+correction_2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bank/controllers/AddMoneyAnotherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bank/controllers/AddMoneyAnotherController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bank/controllers/AddMoneyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bank/controllers/AddMoneyController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bank/controllers/HomepageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bank/controllers/HomepageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bank/controllers/SubMoneyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bank/controllers/SubMoneyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bank/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bank/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/addAnotherCash.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/addAnotherCash.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/addAnotherUser.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/addAnotherUser.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/registration.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/sub.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/sub.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/bank/controllers/AddMoneyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/bank/controllers/AddMoneyController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/bank/controllers/HomepageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/bank/controllers/HomepageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/bank/controllers/SubMoneyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/bank/controllers/SubMoneyController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/bank/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/bank/models/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/registration.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/sub.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/sub.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671564429092</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="operation+correction_2">
+      <created>1671572844904</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1671572844904</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -152,6 +142,7 @@
     <MESSAGE value="add 2" />
     <MESSAGE value="ATM" />
     <MESSAGE value="operation+correction" />
-    <option name="LAST_COMMIT_MESSAGE" value="operation+correction" />
+    <MESSAGE value="operation+correction_2" />
+    <option name="LAST_COMMIT_MESSAGE" value="operation+correction_2" />
   </component>
 </project>

@@ -8,7 +8,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.inject.Inject;
 import java.util.ArrayList;
@@ -33,14 +32,8 @@ public class HomepageController {
                 getCurrentCardbNumberData().toArray()[0].toString());
         model.addAttribute("messageCardNumber", "Номер карты пользователя: " +
                 getCurrentCardbNumberData().toArray()[1].toString());
-        model.addAttribute("messagePIN", "ПИН-код пользователя: "
-                + getCurrentCardbNumberData().toArray()[2].toString());
-        model.addAttribute("messageCVV", "CVV пользователя: "
-                + " ");
         model.addAttribute("messageFirstName", "Имя пользователя: "
-                + " ");
-        model.addAttribute("messageLastName", "Фамилия пользователя: "
-                + " ");
+                + getCurrentCardbNumberData().toArray()[4].toString());
         model.addAttribute("messageBalance", "Баланс: "
                 + getCurrentCardbNumberData().toArray()[6].toString());
         return "home";
