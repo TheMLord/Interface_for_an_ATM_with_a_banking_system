@@ -6,8 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="785822a7-9290-4a03-9896-2f3b7eb77752" name="Changes" comment="operation+correction_2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/bank/controllers/HomepageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/bank/controllers/HomepageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/registration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/addAnotherCash.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/addAnotherCash.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/addAnotherUser.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/addAnotherUser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/registration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/sub.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/sub.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671643510945</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="operation+correction_2">
+      <created>1671645201004</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1671645201004</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

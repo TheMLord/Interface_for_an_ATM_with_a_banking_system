@@ -1,20 +1,155 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
       xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<style>
+html {
+     height: 100%;
+ }
+ * {box-sizing: border-box;}
+
+.wrap {
+  max-width: 660px;
+  margin: 50px auto 0 auto;
+  text-align: center;
+}
+.box {
+  display: inline-block;
+  margin: 0 20px;
+  width: 250px;
+  background: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+.blue {
+  background: #93C5C2;
+}
+h1 {
+    margin: 20px 0;
+    font-size: 1.3em;
+    color: #333333;
+}
+h2 {
+    font-size: 0.8em;
+    color: #666666;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+.price {
+    height: 110px;
+    width: 110px;
+    text-align: center;
+    background-color: #EC351D;
+    border-radius: 50%;
+    line-height: 110px;
+    color: #FFF;
+    font-size: 1.4em;
+    font-weight: 100;
+    margin: 20px auto;
+}
+.blue .price {
+  background: white;
+  color: #333333;
+}
+.blue h1, .blue h2, .blue p {
+  color: white;
+}
+.about {
+  margin: 10px 0px;
+  padding-bottom: 10px;
+  font-weight: 100;
+  font-size: 0.8em;
+  color: #888888;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.button {
+    text-decoration: none;
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background: #47E841;
+    border-radius: 5px;
+    color: white;
+    font-size: 0.75em;
+    font-weight: 100;
+    transition: 0.7s ease-in-out;
+}
+.button:hover {
+  background: #20821D
+}
+body {
+  height: 100%;
+     background: linear-gradient(to bottom, #33cccc 0%, #66ff99 100%) no-repeat;
+     -moz-background-size: 100%;
+     -webkit-background-size: 100%;
+     -o-background-size: 100%;
+     background-size: 100%;
+     font-family: Verdana, Arial, Helvetica, sans-serif;
+     color: #336;
+}
+* {
+  box-sizing: border-box;
+}
+input {
+  display:block;
+  width:100%;
+  margin:10px 0;
+  padding:10px;
+}
+.type-1 {
+  border-radius:10px;
+  border: 1px solid #eee;
+  transition: .3s border-color;
+}
+.type-1:hover {
+  border: 1px solid #aaa;
+}
+
+.type-2 {
+  background-color: #fafafa;
+  border:0;
+  box-shadow:0 0 4px rgba(0,0,0,0.3);
+  transition: .3s box-shadow;
+}
+.type-2:hover {
+  box-shadow:0 0 4px rgba(0,0,0,0.5);
+}
+.type-3 {
+  border:1px solid #111;
+  transition: .3s background-color;
+}
+.type-3:hover {
+  background-color: #fafafa;
+}
+</style>
 <head>
   <title>Add another user money</title>
 </head>
 <body>
-<div th:if="${message}">
-  <div th:text="${message}"></div>
-  <div th:text="${message2}"></div>
+<div>
+  <div2 class="wrap">
+    <div3>
+      <h1>Переревод другому пользователю</h1>
+      <p class="about">
+        <div th:text="${message}"></div> </div3>
+      </p>
+      <p class="about">
+        <div th:text="${message2}"></div>
+      </p>
+      <a class="button">
+        <form th:action="@{/addAnotherCash}" method="post">
+          <div><label> Ввести сумму : <input type="text" name="add"/> </label></div>
+          <div><input type="submit" value="Отправить деньги другому пользователю"/></div>
+        </form>
+      </a>
+      <a class="button">
+        <form th:action="@{/goHomePageFromAddAnother}" method="post">
+          <div><input type="submit" value="Вернуться на главную страницу"/></div>
+        </form>
+      </a>
+    </div3>
+  </div2>
 </div>
-<form th:action="@{/addAnotherCash}" method="post">
-  <div><label> add : <input type="text" name="add"/> </label></div>
-  <div><input type="submit" value="Отправить деньги другому пользователю"/></div>
-</form>
-<form th:action="@{/goHomePageFromAddAnother}" method="post">
-  <div><input type="submit" value="Вернуться на главную страницу"/></div>
-</form>
 </body>
 </html>
